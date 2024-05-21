@@ -1,0 +1,294 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+<section class="top">
+    <div class="top_swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="top_slide">
+                <div class="container">
+                    <div class="top_slide_inner">
+                        <img src="{% static 'images/slider-top/slider-1.jpg' %}" alt="">
+                        <div class="top_slide_content">
+                            <h1 class="top_slide_title">
+                                GRIS DIOR
+                            </h1>
+                            <p class="top_slide_subtitle">
+                                Fragrance
+                            </p>
+                            <p class="top_slide_text">
+                                With Gris Dior you dare to reveal your most surprising, mysterious and unexpected facets.
+                            </p>
+                            <a href="#" class="top_slide_btn button">
+                                DISCOVER
+                            </a>
+                        </div>
+                        <img src="{% static 'images/slider-top/slider-2.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="top_slide" style="background-image: url(/static/images/slider-top/slide-bg-1.jpg);">
+                <div class="container">
+                    <div class="top_slide_inner">
+                        <a href="#" class="top_slide_btn button">
+                            YOUR NEW EXPERIENCE 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="top_slide" style="background-image: url(/static/images/slider-top/slide-bg-2.jpg);">
+                <div class="container">
+                    <div class="top_slide_inner">
+                        <a href="#" class="top_slide_btn button">
+                            YOUR NEW EXPERIENCE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        ...
+      </div>
+      
+      <div class="container container-arrow">
+        <div class="swiper-button-prev">
+            <img src="{% static 'images/arrow-left.svg' %}" alt="">
+          </div>
+          <div class="swiper-button-next">
+            <img src="{% static 'images/arrow-right.svg' %}" alt="">
+          </div>
+      </div>
+
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="about_inner">
+                <div class="about_title">
+                    DARE IN 
+                    GRIS DIOR
+                </div>
+                <div class="about_textbox">
+                    <div class="about_text">
+                        <p>
+                            Gris Dior is the olfactory expression of gray, the iconic color of the House of Dior that embodies the bold spirit of Christian Dior.
+                        </p>
+                        <p>
+                            A unisex eau de parfum that defies gender, Gris Dior is an intense chypre fragrance that makes a strong, recognizable statement, a fragrance you adopt and interpret to suit your own rules.
+                        </p>
+                        <p>
+                            Gris Dior uninhibitedly combines heritage with a modern twist and plays the unisex card with confidence. It is multifaceted and not as obvious as it seems, like the color gray, richly nuanced with its subtleties, anything but a simple mix of black and white.
+                        </p>
+                    </div>
+                    <div class="about_text about_text--bold">
+                        <p>
+                            A backdrop for all desires, revealing all shades: dare to go gray with Gris Dior. 
+                        </p>
+                        <p>
+                            A bold embodiment of this elusive color, Gris Dior is a light chypre fragrance that has become an icon, an unexpected master of the game. Both a fragrance for women and a fragrance for men, its unisex trail invites uninhibited expression today.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about_slider swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <div class="about_item">
+                        <h4 class="about_item_title">
+                            DISCOVER GRIS DIOR
+                        </h4>
+                        <img src="{% static 'images/about-slider/1.jpg' %}" alt="">
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_item">
+                            <h4 class="about_item_title">
+                                DARE TO RISK IT
+                            </h4>
+                            <img src="{% static 'images/about-slider/2.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_item">
+                            <h4 class="about_item_title">
+                                FEEL THE FLAVOUR
+                            </h4>
+                            <img src="{% static 'images/about-slider/3.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_item">
+                        <h4 class="about_item_title">
+                            DISCOVER GRIS DIOR
+                        </h4>
+                        <img src="{% static 'images/about-slider/4.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_item">
+                            <h4 class="about_item_title">
+                                DARE TO RISK IT
+                            </h4>
+                            <img src="{% static 'images/about-slider/1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_item">
+                            <h4 class="about_item_title">
+                                FEEL THE FLAVOUR
+                            </h4>
+                            <img src="{% static 'images/about-slider/2.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container-arrow about_arrow">
+                        <div class="swiper-button-prev">
+                            <img src="{% static 'images/arrow-left.svg' %}" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="{% static 'images/arrow-right.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="about_btn button">
+                    SHOW ME MORE
+                </a>
+        </div>
+    </div>
+</section>
+<div class="accordion">
+    <div class="container">
+        <div class="accordion_inner">
+            <div class="accordion_item">
+                <div class="accordion_triger">
+                    <p class="accordion_triger_title">
+                        DESCRIPTION
+                    </p>
+                    <p class="accordion_triger_text">
+                        Gris Dior is the olfactory expression of gray, the iconic color of the House of Dior that embodies the bold spirit of Christian Dior.
+                    </p>
+                </div>
+                <div class="accordion_content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                </div>
+              
+            </div>
+            <div class="accordion_item">
+                <div class="accordion_triger">
+                    <p class="accordion_triger_title">
+                        PERFUMER'S WORD
+                    </p>
+                    <p class="accordion_triger_text">
+                        "What if the Dior gray were a fragrance? This emphatic gray is not merely a mix of black and white, but the result of a chromatic blend.”
+                    </p>
+                </div>
+                <div class="accordion_content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                </div>
+               
+            </div>
+            <div class="accordion_item">
+                <div class="accordion_triger">
+                    <p class="accordion_triger_title">
+                        APPLICATION TIPS
+                    </p>
+                    <p class="accordion_triger_text">
+                        Spray Gris Dior on pulse points: neck and wrists.
+                    </p>
+                </div>
+                <div class="accordion_content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                </div>
+               
+            </div>
+            <div class="accordion_item">
+                <div class="accordion_triger">
+                    <p class="accordion_triger_title">
+                        INGREDIENTS
+                    </p>
+                   
+                </div>
+                <div class="accordion_content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, accusamus vitae.
+                         Dignissimos ullam sed, adipisci consequatur minima veritatis odio tempora odit nobis, fuga cum aut commodi quidem aliquam perspiciatis quaerat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="products">
+    <div class="container">
+        <div class="products_inner">
+            <p class="products_title">WHAT ELSE?</p>
+            <div class="products_items">
+                {% for product in products %}
+                <div class="products_item">
+                    <p class="product_item_step">{{ product.short_name }}</p>
+                    <img class="products_item_img" src="{{ product.image.url }}" alt="">
+                    <p class="product_item_name">
+                        <span>{{ product.name }}</span>
+                        {{ product.short_desc }}
+                    </p>
+                    <p class="product_item_price">
+                        {{ product.price }}€
+                    </p>
+                </div>
+                {% endfor %}
+                <!-- <div class="products_item">
+                    <p class="product_item_step">02 CONTINUE THE RITUAL</p>
+                    <img class="products_item_img" src="{% static 'images/products/2.jpg' %}" alt="">
+                    <p class="product_item_name">
+                        <span>GRIS DIOR</span>
+                        Unisex Eau de Parfum 
+                    </p>
+                    <p class="product_item_price">
+                        265€
+                    </p>
+                </div>
+                <div class="products_item">
+                    <p class="product_item_step">03 ADD THE FINISHING TOUCH</p>
+                    <img class="products_item_img" src="{% static 'images/products/3.jpg' %}" alt="">
+                    <p class="product_item_name">
+                        <span>GRIS DIOR</span>
+                        Hair Perfume
+                    </p>
+                    <p class="product_item_price">
+                        102€
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

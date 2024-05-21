@@ -1,0 +1,364 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+.button_item_link{
+    color:inherit;
+    text-decoration: none;
+}
+ul{
+    list-style-type:none;
+}
+.container{
+    max-width:1200px;
+    padding-left:10px;
+    padding-right:10px;
+    margin:0 auto;
+
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:1.4;
+    color: #1B1B1B;
+}
+.header{
+    margin-bottom: 90px;
+}
+.header_inner{
+    display:flex;
+    justify-content: space-between;
+    padding-top:30px;
+    align-items: center;
+}
+.header_title{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+   
+
+}
+.User{
+    margin-left: 130px;
+    margin-right: -124px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.User:hover{
+    margin-bottom: 10px;
+}
+.menu{
+    margin-left: 130px;
+    margin-right: 185px;
+}
+.menu_item{
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.user_nav{
+    display:flex;
+    gap:0 20px;
+}
+.top{
+    margin-bottom: 100px;
+}
+.top_slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.top_slide_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10px ;
+    min-height: 700px;
+}
+
+.top_slide_content{
+    flex-basis: 183px;
+    margin-top: -88px;
+
+}
+.top_slide_title{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1.3;
+}
+
+.top_slide_subtitle{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.top_slide_text{
+    margin-bottom: 20px;
+}
+.top_slide_btn{
+    margin-left: auto;
+}
+.button{
+    color: #7449BB;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 21px 55px;
+    border: 1px solid #7449BB;
+    display: inline-block;
+    
+    transition: all .3s ease;
+}
+.button:hover{
+    color:#fff;
+    background-color: #7449BB;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    content: none;
+}
+.container-arrow{
+    position: relative;
+    max-width: 1200px;
+}
+.top .swiper{
+    padding-bottom: 50px;
+}
+
+.swiper-button-next{
+    left: 75px;
+    right: auto;
+}
+.about{
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.about_inner{
+    padding-left: 200px;
+}
+.about_title{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 32px;
+    max-width: 185px;
+    text-transform: uppercase;
+    line-height: 1.34;
+    margin-bottom: 20px;
+}
+.about_textbox{
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.about_text{
+    flex-basis: 387px;
+}
+.about_text p{
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+.about_text--bold{
+    font-weight: 700;
+}
+.about_item_title{
+    margin-bottom: 20px;
+}
+.about_slider{
+    width: 1800px;
+    padding-left: 200px;
+    margin-left: -200px;
+    padding-bottom: 20px;
+}
+.about_arrow{
+    margin-left: -198px;
+    margin-top: -6px;
+}
+.container-arrow .swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+.accordion{
+    margin-bottom: 223px;
+}
+.accordion_inner{
+    padding-left: 200px;
+}
+.accordion_item{
+    border-bottom: 1px solid #000;
+    padding: 0 101px 0 0;
+    position: relative;
+}
+.accordion_item::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 51px;
+    background-image: url(/static/images/arrow-down.svg);
+    right: 80px;
+    top: 50px;
+}
+
+.accordion_triger{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-top: 50px;
+}
+.accordion_triger_title{
+    text-transform: uppercase;
+    font-size: 24px;
+    flex-basis: 300px;
+    padding-bottom: 42px;
+}
+.accordion_triger_text{
+    flex-basis: 387px;
+    margin-right: 104px;
+    padding-bottom: 20px;
+    
+}
+.accordion_content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+}
+.accordion_content p{
+    margin-bottom: 10px;
+}
+.accordion_item--active .accordion_content{
+    display: block;
+}
+.products{
+    margin-bottom: 150px;
+}
+.products_inner{
+    position: relative;
+    min-height: 647px;
+}
+.products_title{
+    font-family: "Playfair Display", serif;
+    line-height: 1.34;
+    font-size: 32px;
+    width: 100px;
+}
+.products_items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0 20px;
+    
+    /* position: absolute;
+    top: 0;
+    left: 200px; */
+}
+.products_item{
+    text-align: center;
+}
+.product_item_step{
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+.products_item_img{
+    margin-bottom: 20px;
+}
+.product_item_name{
+    margin-bottom: 10px;
+}
+.product_item_name span{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.product_item_price{
+    font-family: "Playfair Display", serif;
+    line-height: 1.34;
+    font-size: 32px;
+    font-style: italic;
+}
+.footer{
+    background-color: #C4A9CD;
+    padding: 66px 0 100px;
+}
+.footer_top{
+    margin-bottom: 70px;
+    display: flex;
+    gap: 0 70px;
+    justify-content: space-between;
+}
+.footer_logo{
+    margin-right: 10px;
+}
+.footer_items{
+    flex-basis: 387px;
+}
+.footer_item + .footer_item{
+    margin-top: 70px;
+}
+.footer_item_title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer_item_form{
+   position: relative;
+}
+.footer_item_input{
+    width: 100%;
+    display: block;
+    padding: 10px 60px 10px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: #C4A9CD;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1B1B1B;
+}
+.footer_item_input::placeholder{
+    font-size: 12px;
+    color: #000;
+    opacity: 0.4;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.footer_item_btn{
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+}
+.footer_item_list li{
+    padding-top: 10px;
+}
+.footer_social_list{
+    margin-left: 10px;
+    align-self: flex-end;
+
+}
+.footer_social_item + .footer_social_item{
+    margin-top: 20px;
+}
+.footer_social_item path:hover{
+    fill: #7449BB;
+}
+.footer_nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_nav_list{
+    display: flex;
+    gap: 0 20px;
+}
